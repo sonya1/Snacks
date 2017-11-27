@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	}
+body{
+	background:#f2f0f0;
+	overflow-x:hidden;
+	}
+.con{
+	width:950px;
+	height:504px;
+	margin:0 auto;
+	background:#FFF;
+	margin-top:10px;
+	border-radius:5px;
+	border:#e6e4e4;
+	}
+img{
+	padding:15px;
+	float:left;
+	}
+.left{
+	width:400px;
+	height:400px;
+/*	background:red;
+*/	float:left;
+	margin-top:100px;
+	}
+.right{
+	width:300px;
+	height:310px;
+/*	background:yellow;
+*/	float:left;
+	margin-top:100px;
+	border-left:dotted 1px #ccc;
+	padding-left:15px;
+	padding-top:50px;
+	}
+h2{
+	color:#666666;
+	}
+input{
+	outline:none;
+	}
+.input{
+	width:240px;
+	border: 2px solid #ddd;
+	color: #666;
+	padding: 2px 5px;
+	border-radius: 8px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	margin-top:20px;
+	}
+
+input[type=radio]{
+	margin-top:20px;
+	}
+input[type=submit]{
+	margin-top:20px;
+	background:#FF6600;
+	width:140px;
+	height:40px;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	border:0;
+	border-radius:5px;
+	cursor:pointer;
+	}
+input[type=checkbox]{
+	margin-top:20px;
+	}
+a{
+	text-decoration:none;
+	color:#f60;
+	}
+ul li{
+	float:left;
+	width:44px;
+	height:44px;
+	list-style-type:none;
+	background:red;
+	margin-left:10px;
+	margin-top:5px;
+	background:url(../img/regIcon0.png);
+	}
+.sina{
+	background-position:0 0;
+	}
+.qq{
+	background-position:-47px 0px;
+	}
+.taobao{
+	background-position:-94px 0px;
+	}
+.renren{
+	background-position:-142px 0px;
+	}
+.wangyi{
+	background-position:-190px 0px;
+	}
+.weibo{
+	background-position:0px -50px;
+	}
+.douban{
+	background-position:-47px -50px;
+	}
+.baidu{
+	background-position:-94px -50px;
+	}

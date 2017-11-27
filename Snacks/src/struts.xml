@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!--  用户管理  -->
+	<package name="user" namespace="/user" extends="struts-default">
+		<action name="user_*" class="com.actions.UserAction" method="{1}">
+			<result name="loginSuccess">/table/index.jsp</result>
+	   		<result name="modify">/table/qiantai/zi/user_input.jsp</result>
+	   		<result name="list1">/table/qiantai/zi/user_list.jsp</result>
+	   		<result name="list">/table/user/user_list.jsp</result>
+	   		
+	   		<result name="exit">/table/qiantai/index.jsp</result>
+	   		<result name="deleteFaliure">/table/user/user_list.jsp</result>
+	   		<result name="Success" type="chain" >user_list</result>
+	   		<result name="SuperloginFailure">/failure1.jsp</result> 
+	   		<result name="success">/table/qiantai/index.jsp</result>
+	   		<result name="loginFailure">/login_failure.jsp</result> 
+	   		<result name="registSuccess">/table/qiantai/shou/login.jsp</result>
+	   		<result name="registFailure">/regist_failure.jsp</result> 
+		</action>
+	</package>
+	
+	<!--  类型管理  -->
+	<package name="type" namespace="/type" extends="struts-default">
+		<action name="type_*" class="com.actions.TypeAction" method="{1}">
+			<result name="list">/table/type/type_list.jsp</result>
+	   		<result name="success" type="chain" >type_list</result>
+			<result name="addFailure">/table/type/type_input.jsp</result>
+			<result name="modify">/table/type/type_input.jsp</result>
+		</action>
+	</package>
+	
+	<!--  公告管理  -->
+	<package name="news" namespace="/news" extends="struts-default">
+		<action name="news_*" class="com.actions.NewsAction" method="{1}">
+			<result name="list">/table/news/news_list.jsp</result>
+			<result name="input">/table/news/news_input.jsp</result>
+			<result name="success" type="chain">news_list</result>
+			<result name="addFailure">/failure.jsp</result> 
+		</action>
+	</package>
+		
+	<!-- 产品管理 -->
+	<package name="goods" namespace="/goods" extends="struts-default">
+		<action name="goods_*" class="com.actions.GoodsAction" method="{1}">
+		<result name="list">/table/goods/goods_list.jsp</result>
+		<result name="Success" type="chain" >goods_list1</result>
+		<result name="modify">/table/goods/goods_input.jsp</result>
+		<result name="Failure">/table/goods/goods_list.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 购物车管理 -->
+	<package name="cart" namespace="/cart" extends="struts-default">
+		<action name="cart_*" class="com.actions.CartAction" method="{1}">
+		<result name="Failure">/table/cart/cart_list.jsp</result>
+		
+		<result name="list1">/table/qiantai/nei/cart.jsp</result><!-- 前台的 -->
+		<result name="list">/table/cart/cart_list.jsp</result>  <!-- 后台的 -->
+		<result name="list2">/table/cart/cart_list.jsp</result>  <!-- 后台的 -->
+		<result name="Success" type="chain" >cart_list1</result>
+		<result name="addSuccess">/table/qiantai/nei/cart.jsp</result>
+		<result name="addFailure">/table/qiantai/index.jsp</result>
+		<result name="Failure">/table/qiantai/shou/login.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 订单管理 -->
+	<package name="orders" namespace="/orders" extends="struts-default">
+		<action name="orders_*" class="com.actions.OrdersAction" method="{1}">
+		<result name="list1">/table/qiantai/nei/orders.jsp</result><!-- 前台的 -->
+		<result name="list">/table/orders/order_list.jsp</result>  <!-- 分页后台的 -->
+		<result name="Success" type="chain" >orders_list1</result>
+		<result name="list2">/table/orders/order_list.jsp</result>  <!-- 后台的 -->
+		<result name="addSuccess">/table/qiantai/nei/orders.jsp</result>
+		<result name="addFailure">/qiantai/index.jsp</result>
+		<result name="Failure">/table/qiantai/shou/login.jsp</result>
+		</action>
+	</package>
+</struts>

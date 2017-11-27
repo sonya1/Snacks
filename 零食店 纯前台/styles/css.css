@@ -1,0 +1,24 @@
+body {text-align: center;margin:0;padding:0;background: #FFF;font-size:12px;color:#353535;font-family: "ËÎÌå";}
+div,form,img,ul,ol,li,dl,dt,dd,label {margin: 0; padding: 0; border: 0;}
+table,td,tr,th{font-size:12px;}
+h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+img{border:0;}
+li{list-style-type:none;}
+#confirm{float:right; margin-right:-10px;}
+/*-------------------------------------------------------*/
+
+
+
+/*****Ê×Ò³FLASHÍ¼Æ¬ÇÐ»»*****/
+	#ifocus_pic { display:inline; position:relative;float:right;width:713px; height:319px; overflow:hidden; margin-top:5px; margin-right:0 }
+		#ifocus_piclist { position:absolute; }
+		#ifocus_piclist li { width:713px; height:319px; overflow:hidden; display:none}
+		#ifocus_piclist img { width:713px; height:319px;}
+		#ifocus_opdiv { position:absolute; left:0; bottom:0; width:730px; height:50px; background:#000; opacity:0.5; -moz-opacity:0.5; filter:alpha(opacity=50); }
+	#ifocus_tx { position:absolute; left:8px; bottom:8px; color:#FFF; font-size:15px}
+		#ifocus_tx .normal { display:none; }
+
+
+
+
+

@@ -1,0 +1,51 @@
+/*
+    DJANGO Admin styles
+*/
+	table{
+	 width:100%;
+	 border:0;
+	 cellpadding:0;
+	 cellspacing:0;
+	 font-size: 12px;
+	font-family:"楷体";
+	}
+	
+	td{
+	 height:30px;	 
+	}
+	#fenye{
+		color:black;
+		font-size: 12px;
+		font-family:"楷体";
+		text-align: center;
+	}
+	
+	#fenye a{
+		color:black;
+	}
+/* 分页样式 */
+	.aa{
+	width:100%;
+	background:#CCFF99;
+	}
+	.bb{
+	width:455px;
+	margin:auto auto;
+	}
+	
+	.cc{
+	bordercolor:"white";  
+	width:455px;
+	}
+/* 人员简介  */
+	.jianjie_1{
+		font-family: "华文楷体";
+		margin-left:350px;
+		font-size:20px;
+		color:#0066FF;
+		float:left;
+	}
+	.jianjie_2{
+		
+	}
+	

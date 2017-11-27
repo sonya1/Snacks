@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.content ul{
+	margin-top:10px;
+	}
+.content ul li{
+	list-style:none;
+	float:left;
+	width:166px;
+	height:272px;
+/*	background:#CC0000;
+*/	margin-left:10px;
+	margin-top:10px;
+	border:1px solid #FF9933;	
+	}
+.content ul li img{
+	width:160px;
+	height:160px;
+	padding:3px;
+	}
+.content ul li .zi{
+	text-align:left;
+	padding:5px;
+	font-size:14px;
+	line-height:25px;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+	}
+

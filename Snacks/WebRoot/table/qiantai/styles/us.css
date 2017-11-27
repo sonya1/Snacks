@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.content .us{
+	width:100%;
+	height:600px;
+	background:url(../img/orange_bg.gif);
+	margin-top:10px;
+	border-radius:9px;
+	}
+.content .us .conn{
+	margin-left:60px;
+	margin-right:60px;
+	}
+.content .us .title{
+	width:200px;
+	height:30px;
+	padding-top:30px;
+	font-size:24px;
+	font-weight:700;
+	color:white;
+	}
+
+
+.content .us .info{
+	background:url(../img/us_bg.jpg) no-repeat ;
+	width:855px;
+	height:456px;
+	margin-top:20px;
+	}
+.info .us_table{
+	margin-top:130px;
+	margin-left:100px;	
+	float:left;
+	font-size:17px;
+	}
